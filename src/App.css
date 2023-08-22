@@ -1,38 +1,501 @@
 .App {
   text-align: center;
+  font-family: 'Rubik', sans-serif;
+  background-color: #e3e6e6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rowLocation {
+  display: flex;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.Logo {
+  height: 50px;
+  display: flex;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.colLogoDiv {
+  display: flex;
+}
+
+
+.Navbar {
+  background-color: #131921;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  align-items: center;
+  height: 60px;
+
+}
+
+
+
+.noneLink {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is .Search */
+.SearchBarNavAll {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  width: max-content;
+}
+
+
+
+
+/* 
+this is the searchbar 
+*/
+.AllSearchBar {}
+
+
+/* AutocompleteBar styles */
+
+.autocomplete-wrapper {
+  position: relative;
+}
+
+.autocomplete-input {
+  width: 900px;
+  padding: 5px;
+
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 150px;
+  /* Set a fixed or max height for the dropdown */
+  overflow-y: auto;
+  /* Enable vertical scrolling if needed */
+  z-index: 999;
+  /* Set a higher z-index value to place it on top */
+}
+
+.autocomplete-option {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.SearchBarNav {
+  background-color: white;
+  color: #111;
+  width: 85%;
+  line-height: 15px;
+
+  padding: 0px 10px 10px 0px;
+  border: 0;
+  height: 38px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: 0;
+  box-shadow: none;
+  text-indent: 8px;
+
+}
+
+.orangeBtn {
+  padding: 6px;
+  background-color: #febd69;
+
+}
+
+/* This is .Search */
+
+
+.rowBtn {
+  display: flex;
+}
+
+/* 
+this is all the top buttons */
+.SearchBarNavBtn {
+  background-color: #131921;
+  border: none;
+  color: white;
+  padding: 10px 12px 0px 12px;
+  font-size: 11px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* 
+this is all the top buttons bold parts */
+
+.btnBold {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.ColButton {
+  display: flex;
+  margin: 0;
+  padding: 0%;
+}
+
+
+
+.dropdown-container {
+  text-align: left;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 5px;
+}
+
+.dropdown-input {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+
+.InputLNav {
+  background-color: #f3f3f3;
+  height: 38px;
+  margin: 0;
+  padding-left: 5px;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+}
+
+.rowbottomNav {
+  /* BottomNav */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #232f3e;
+
+}
+
+
+.AllIconBtn {
+  width: 10px;
+  font-size: small;
+  margin-right: 5px;
+
+}
+
+.AllBtnBottomNav {
+  display: flex;
+
+  align-items: center;
+  background-color: #232f3e;
+  border: none;
+  color: white;
+  padding: 5px 18px 5px 18px;
+  font-weight: 700;
+}
+
+
+.BtnBottomNav {
+  background-color: #232f3e;
+  color: white;
+  border: none;
+  font-weight: 700;
+
+
+  padding: 10px 15px 10px 15px;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+
+
+
+
+
+
+.homePageWidth {
+  margin-left: 200px;
+  width: 80%;
+}
+
+
+
+/* card */
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.cardPick {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0 15px 0;
+  background-color: #FFF;
+
+  color: #0F1111;
+  width: 350px;
+  margin: 10px 10px 10px 10px;
+
+}
+
+.cardTitle {
+  font-weight: 700;
+  text-align: left;
+  padding-left: 20px;
+
+
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px;
+}
+
+
+.photoPickUp {
+  width: 145px;
+  height: 165px;
+
+}
+
+.photoPick {
+  width: 145px;
+  height: 145px;
+
+}
+
+.titleHere {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.viewHere {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.cardView {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+
+
 }
 
-.App-link {
+
+/* colAds */
+
+.colAds {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.fitBitAd {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0 15px 0;
+  background-color: #FFF;
+  color: #0F1111;
+  width: 350px;
+  height: 140px;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  padding: 10px;
+}
+
+.fitBitTextAll {
+  text-align: left;
+  padding: 12px;
+}
+
+.fitBitText {
+  font-size: 18px;
+  font-weight: 800px;
+}
+
+.vacAdAll {
+  width: 300px;
+  margin: 20px;
+}
+
+.vacAd {
+  border: black 1px solid;
+}
+
+.vacAdTextAll {
+  display: flex;
+  justify-content: end;
+  font-size: 11px;
+}
+
+
+.movieAdAll {
+  display: flex;
+  margin: 10px;
+}
+
+.movieAd {
+  width: 720px;
+}
+
+.topTextPrettyAdAll {
+  color: white;
+  position: absolute;
+  text-align: left;
+  margin: 20px;
+
+}
+
+.topTextTopPretty {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.topTextBottomPretty {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bottomTextPrettyAll {
+  color: white;
+
+}
+
+/* 
+    Product page 
+*/
+
+
+
+.productWholePage {
+  margin: 0px 200px 0px 200px;
+  display: flex;
+}
+
+
+.PhotoPlusText {
+  text-align: left;
+}
+
+
+.wholeProductRow {
+  display: flex;
+}
+
+
+.sidePhotoLine {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.SidePhoto {
+  margin: 8px;
+  width: 60px;
+  height: 70px;
+  border: rgb(133, 133, 133) 1px solid;
+  border-radius: 10px;
+}
+
+.MainProductPhoto {
+  width: 400px;
+}
+
+
+.ProductText {
+  text-align: left;
+  margin: 30px;
+}
+
+.ProductTitle {
+  font-size: 28px;
+}
+
+.RatingLine {
+  display: flex;
+}
+
+.RatingSpace {
+  margin: 5px 10px 0px 10px;
+}
+
+
+.PriceText .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.LoginCol {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.LoginBox {
+  background-color: white;
+  border: rgb(172, 172, 172) 1px solid;
+  border-radius: 10px;
+  width: 350px;
+  text-align: left;
+  padding: 5px;
+
+}
+
+
+
+.FooterA {
+  color: #3f43bc;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.FooterLinks {
+  margin-bottom: 15px;
+}
+
+.FooterText {
+  font-size: 12px;
+  background-color: #fdfdfd;
+  padding: 20px;
+
+
 }
